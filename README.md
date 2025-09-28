@@ -1,1 +1,8 @@
-# rika-grading-app
+{
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/ReflectionGraderApp.jsx"
+    }
+  ]
+}
