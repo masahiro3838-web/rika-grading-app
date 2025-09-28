@@ -1,0 +1,20 @@
+{
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/ReflectionGraderApp.jsx"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/ReflectionGraderApp.jsx",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/html"
+        }
+      ]
+    }
+  ]
+}
+
