@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>理科 振り返り改善コーチ - AI採点</title>
+    <!-- Tailwind CSSの読み込み -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- ReactとReactDOMの読み込み -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    
+    <!-- 🚨 修正する箇所：Babelを新しいバージョンに置き換える 🚨 -->
+    <!-- <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> <- これを削除 -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> <!-- <- これを追加 -->
+
+    <style>
+        /* 日本語フォントを優先 */
+        body {
+            font-family: 'Noto Sans JP', 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+    </style>
+</head>
+<body>
+    <!-- Reactアプリのルート要素 -->
+    <div id="root"></div>
+
+    <!-- 🚨 ここからがアプリの本体コード 🚨 -->
+    <!-- type="text/babel"が、ブラウザにReactコードであることを教えます -->
+    <script type="text/babel">
+        // API設定
+        const API_KEY = ""; 
+        const API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=" + API_KEY;
+
+        // ... (以下、すべてのコードは変更なしで続きます)
+        // ...
+        // ...
+        
+        // Reactアプリの起動
+        const rootElement = document.getElementById('root');
+        ReactDOM.createRoot(rootElement).render(<App />);
+
+    </script>
+</body>
+</html>
+
